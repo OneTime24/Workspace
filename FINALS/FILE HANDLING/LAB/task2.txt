@@ -1,0 +1,13 @@
+Mohsin : 12
+Ali : 12
+faiq : 23
+naveed : 25
+umer : 23
+aftab : 12
+taha : 22
+jerry : 29
+hafa : 27
+huzaifa : 24
+Ayan : 30
+Huzaifa : 29
+Azhan : 27

@@ -1,0 +1,5 @@
+ali : 25
+ahmed : 25
+faiq : 25
+naveed : 25
+umer : 25

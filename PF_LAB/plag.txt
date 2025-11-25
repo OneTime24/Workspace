@@ -1,0 +1,21 @@
+Plagerism Checker!!!
+
+1. First Menu to show File or Code Plagerism Check.
+2. Take Input for Number of files.
+3. Take name of files input
+4. Convert to lowercase, remove punctuations and extra spaces.
+5. Tokenize into words and store into an array. Group it into 3 word sequence using n grame.
+6. Comparison Logic
+
+(matched tokens/Total Tokens)*100
+
+7. Output the Percentage Similarity
+
+
+FOR CODE!!!!!
+
+1. Frist Menu to show File or Code Plagerism Check.
+2. Take Number of Input Files!
+3. Take name of files input
+4. remove comments, normalize variable/numbers, tokenize tokens(use cosine similarity)
+5. Then Compare

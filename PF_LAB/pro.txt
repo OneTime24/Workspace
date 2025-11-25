@@ -1,0 +1,27 @@
+
+plagerism Checker Workflow!
+
+Start
+Show main menu
+1. Text file, docs file
+2. code
+
+if 1:
+
+	take mutiple input
+	check for plagerism
+		preprocess files
+		tokenize them
+		use n gram
+		check similarity
+		write report in a file
+
+if 2:
+	take multiple input
+	check for plagerism
+		preprocess files
+		normalize variable names
+		use cosine similarity
+		check similarity
+		write report in a file
+

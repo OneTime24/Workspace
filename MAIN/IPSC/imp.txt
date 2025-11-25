@@ -1,0 +1,8 @@
+FILE *pointer=fopen("name",r)
+if(fp==NULL){
+
+}
+char wrod[100];
+while(fscanf(fp,"%s",word)!=EOF){
+    printf(%s\n, word)
+}

@@ -1,0 +1,2 @@
+Hello, This is a test file for task 5 where it will look for a number of a specific character repitation in this text file.
+so i am writing these lines to look for a specific character.
