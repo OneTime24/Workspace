@@ -1,0 +1,242 @@
+========================================
+   PLAGIARISM DETECTION REPORT
+   Code File Analysis
+========================================
+
+Comparing: input.c vs logic.c
+Matched tokens:
+  - FILE
+  - 0;
+  - &&
+  - &&
+  - ");
+  - 1;
+  - *src,
+  - NULL;
+  - *src,
+  - *dest)
+  - i=0,j=0;
+  - (src[i]!='\0'){
+  - i++;
+  - dest[j]='\0';
+  - i++;
+  - &&
+  - dest[j]='\0';
+
+Total Matches: 17
+File1 tokens: 165, File2 tokens: 164
+Similarity: 10.33%
+========================================
+
+========================================
+   PLAGIARISM DETECTION REPORT
+   Code File Analysis
+========================================
+
+========================================
+   PLAGIARISM DETECTION REPORT
+   Code File Analysis
+========================================
+
+Comparing: logic.c vs logic.c
+Matched tokens:
+  - FILE
+  - *report_file
+  - NULL;
+  - isKeyword(
+  - *word)
+  - *keywords[]
+  - {"","","","","","","","","",""};
+  - i=0;i<10;i++){
+  - (strcmp(word,keywords[i])==0)
+  - 1;
+  - 0;
+  - removeCommentsAndHeaders(
+  - *src,
+  - *dest)
+  - i=0,j=0;
+  - (src[i]!='\0'){
+  - (src[i]=='
+  - (src[i]=='/'
+  - &&
+  - src[i+1]=='/'){
+  - i+=2;
+  - (src[i]!='\n'
+  - &&
+  - src[i]!='\0')
+  - i++;
+  - continue;
+  - (src[i]=='/'
+  - &&
+  - src[i+1]=='*'){
+  - i+=2;
+  - (!(src[i]=='*'
+  - &&
+  - src[i+1]=='/')
+  - &&
+  - src[i]!='\0')
+  - i++;
+  - (src[i]!='\0')
+  - i+=2;
+  - continue;
+  - dest[j++]=src[i++];
+  - dest[j]='\0';
+  - removeKeywords(
+  - *src,
+  - *dest)
+  - i=0,j=0,w=0;
+  - word[50];
+  - (src[i]!='\0'){
+  - (isalpha(src[i]))
+  - word[w++]=src[i];
+  - word[w]='\0';
+  - (w>0
+  - &&
+  - !isKeyword(word)){
+  - x=0;word[x]!='\0';x++)
+  - dest[j++]=word[x];
+  - w=0;
+  - dest[j++]=src[i];
+  - i++;
+  - dest[j]='\0';
+  - checkPlgText(
+  - *txt1,
+  - *txt2){
+  - *c1=malloc(strlen(txt1)+1),*c2=malloc(strlen(txt2)+1);
+  - strcpy(c1,txt1);
+  - strcpy(c2,txt2);
+  - *t1[1000],*t2[1000];
+  - n1=0,n2=0;
+  - *p=strtok(c1,"
+  - ");
+  - (p){
+  - t1[n1]=malloc(strlen(p)+1);
+  - strcpy(t1[n1++],p);
+  - p=strtok(NULL,"
+  - ");
+  - p=strtok(c2,"
+  - ");
+  - (p){
+  - t2[n2]=malloc(strlen(p)+1);
+  - strcpy(t2[n2++],p);
+  - p=strtok(NULL,"
+  - ");
+  - free(c1);
+  - free(c2);
+  - match=0;
+  - i=0;i<n1-2;i++){
+  - j=0;j<n2-2;j++){
+  - (strcmp(t1[i],t2[j])==0
+  - &&
+  - strcmp(t1[i+1],t2[j+1])==0
+  - &&
+  - strcmp(t1[i+2],t2[j+2])==0){
+  - match++;
+  - (report_file)
+  - fprintf(report_file,"
+  - \"%s
+  - %s
+  - %s\"\n",t1[i],t1[i+1],t1[i+2]);
+  - break;
+  - sim
+  - ()match
+  - (n1-2)
+  - 100;
+  - i=0;i<n1;i++)
+  - free(t1[i]);
+  - i=0;i<n2;i++)
+  - free(t2[i]);
+  - sim;
+  - sim_chek(
+  - *s1,
+  - *s2){
+  - *c1=malloc(strlen(s1)+1),
+  - *c2=malloc(strlen(s2)+1);
+  - strcpy(c1,s1);
+  - strcpy(c2,s2);
+  - *t1[1000],
+  - *t2[1000];
+  - n1=0,n2=0;
+  - *p=strtok(c1,"
+  - \n\t");
+  - (p){
+  - t1[n1]=malloc(strlen(p)+1);
+  - strcpy(t1[n1++],p);
+  - p=strtok(NULL,"
+  - \n\t");
+  - p=strtok(c2,"
+  - \n\t");
+  - (p){
+  - t2[n2]=malloc(strlen(p)+1);
+  - strcpy(t2[n2++],p);
+  - p=strtok(NULL,"
+  - \n\t");
+  - free(c1);
+  - free(c2);
+  - *used=calloc(n2,sizeof());
+  - match=0;
+  - i=0;i<n1;i++){
+  - j=0;j<n2;j++){
+  - (!used[j]
+  - &&
+  - strcmp(t1[i],t2[j])==0){
+  - printf("Matched:
+  - %s\n",t1[i]);
+  - (report_file)
+  - fprintf(report_file,"
+  - %s\n",t1[i]);
+  - used[j]=1;
+  - match++;
+  - break;
+  - perc=(match/()n1)*100;
+  - printf("\nTOTAL
+  - MATCHED:
+  - %d\nSIMILARITY:
+  - %.2f%%\n",match,perc);
+  - (report_file){
+  - fprintf(report_file,"\nTotal
+  - Matches:
+  - %d\nSimilarity:
+  - %.2f%%\n",match,perc);
+  - fprintf(report_file,"========================================\n\n");
+  - i=0;i<n1;i++)
+  - free(t1[i]);
+  - i=0;i<n2;i++)
+  - free(t2[i]);
+  - free(used);
+
+Total Matches: 164
+File1 tokens: 164, File2 tokens: 164
+Similarity: 100.00%
+========================================
+
+========================================
+   PLAGIARISM DETECTION REPORT
+   Code File Analysis
+========================================
+
+Comparing: logic.c vs input.c
+Matched tokens:
+  - FILE
+  - NULL;
+  - 1;
+  - 0;
+  - *src,
+  - *dest)
+  - i=0,j=0;
+  - (src[i]!='\0'){
+  - &&
+  - &&
+  - i++;
+  - &&
+  - i++;
+  - dest[j]='\0';
+  - *src,
+  - dest[j]='\0';
+  - ");
+
+Total Matches: 17
+File1 tokens: 164, File2 tokens: 165
+Similarity: 10.33%
+========================================
+

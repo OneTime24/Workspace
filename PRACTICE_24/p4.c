@@ -1,0 +1,2 @@
+// Earthquake Descriptor!!
+//EASY DONE!!

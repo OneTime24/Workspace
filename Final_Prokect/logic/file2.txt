@@ -1,4 +1,6 @@
-the quick brown fox jumps over the lazy dog
-a stitch in time saves nine can help avoid mistakes
-learning to code is fun if you practice every day
-the early bird catches the worm and gets an advantage
+a quick brown fox jumps over the lazy dog.
+a quick brown fox jumps over the lazy dog.
+a quick brown fox jumps over the lazy dog.
+a quick brown fox jumps over the lazy dog.
+a quick brown fox jumps over the lazy dog.
+a quick brown fox jumps over the lazy dog.

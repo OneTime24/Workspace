@@ -1,0 +1,306 @@
+========================================
+   PLAGIARISM DETECTION REPORT
+   Text File Analysis
+========================================
+
+Comparing: test.pdf vs tech.docx
+Matched 3-word phrases:
+
+Similarity Score: 0.00%
+========================================
+
+========================================
+   PLAGIARISM DETECTION REPORT
+   Text File Analysis
+========================================
+
+Comparing: file1.txt vs file2.txt
+Matched 3-word phrases:
+  - "a quick brown"
+  - "quick brown fox"
+  - "brown fox jumps"
+  - "fox jumps over"
+  - "jumps over the"
+  - "over the lazy"
+  - "the lazy dog"
+  - "lazy dog a"
+  - "dog a quick"
+  - "a quick brown"
+  - "quick brown fox"
+  - "brown fox jumps"
+  - "fox jumps over"
+  - "jumps over the"
+  - "over the lazy"
+  - "the lazy dog"
+  - "lazy dog a"
+  - "dog a quick"
+  - "a quick brown"
+  - "quick brown fox"
+  - "brown fox jumps"
+  - "fox jumps over"
+  - "jumps over the"
+  - "over the lazy"
+  - "the lazy dog"
+  - "lazy dog a"
+  - "dog a quick"
+  - "a quick brown"
+  - "quick brown fox"
+  - "brown fox jumps"
+  - "fox jumps over"
+  - "jumps over the"
+  - "over the lazy"
+  - "the lazy dog"
+  - "lazy dog a"
+  - "dog a quick"
+  - "a quick brown"
+  - "quick brown fox"
+  - "brown fox jumps"
+  - "fox jumps over"
+  - "jumps over the"
+  - "over the lazy"
+  - "the lazy dog"
+  - "lazy dog a"
+  - "dog a quick"
+  - "a quick brown"
+  - "quick brown fox"
+  - "brown fox jumps"
+  - "fox jumps over"
+  - "jumps over the"
+  - "over the lazy"
+  - "the lazy dog"
+  - "lazy dog a"
+  - "dog a quick"
+  - "a quick brown"
+  - "quick brown fox"
+  - "brown fox jumps"
+  - "fox jumps over"
+  - "jumps over the"
+  - "over the lazy"
+  - "the lazy dog"
+  - "lazy dog a"
+  - "dog a quick"
+  - "a quick brown"
+  - "quick brown fox"
+  - "brown fox jumps"
+  - "fox jumps over"
+  - "jumps over the"
+  - "over the lazy"
+  - "the lazy dog"
+  - "lazy dog a"
+  - "dog a quick"
+  - "a quick brown"
+  - "quick brown fox"
+  - "brown fox jumps"
+  - "fox jumps over"
+  - "jumps over the"
+  - "over the lazy"
+  - "the lazy dog"
+  - "lazy dog a"
+  - "dog a quick"
+  - "a quick brown"
+  - "quick brown fox"
+  - "brown fox jumps"
+  - "fox jumps over"
+  - "jumps over the"
+  - "over the lazy"
+  - "the lazy dog"
+  - "lazy dog a"
+  - "dog a quick"
+  - "a quick brown"
+  - "quick brown fox"
+  - "brown fox jumps"
+  - "fox jumps over"
+  - "jumps over the"
+  - "over the lazy"
+  - "the lazy dog"
+
+Similarity Score: 100.00%
+========================================
+
+========================================
+   PLAGIARISM DETECTION REPORT
+   Text File Analysis
+========================================
+
+Comparing: file1.txt vs file2.txt
+Matched 3-word phrases:
+  - "a quick brown"
+  - "quick brown fox"
+  - "brown fox jumps"
+  - "fox jumps over"
+  - "jumps over the"
+  - "over the lazy"
+  - "the lazy dog"
+  - "lazy dog a"
+  - "dog a quick"
+  - "a quick brown"
+  - "quick brown fox"
+  - "brown fox jumps"
+  - "fox jumps over"
+  - "jumps over the"
+  - "over the lazy"
+  - "the lazy dog"
+  - "lazy dog a"
+  - "dog a quick"
+  - "a quick brown"
+  - "quick brown fox"
+  - "brown fox jumps"
+  - "fox jumps over"
+  - "jumps over the"
+  - "over the lazy"
+  - "the lazy dog"
+  - "lazy dog a"
+  - "dog a quick"
+  - "a quick brown"
+  - "quick brown fox"
+  - "brown fox jumps"
+  - "fox jumps over"
+  - "jumps over the"
+  - "over the lazy"
+  - "the lazy dog"
+  - "lazy dog a"
+  - "dog a quick"
+  - "a quick brown"
+  - "quick brown fox"
+  - "brown fox jumps"
+  - "fox jumps over"
+  - "jumps over the"
+  - "over the lazy"
+  - "the lazy dog"
+  - "lazy dog a"
+  - "dog a quick"
+  - "a quick brown"
+  - "quick brown fox"
+  - "brown fox jumps"
+  - "fox jumps over"
+  - "jumps over the"
+  - "over the lazy"
+  - "the lazy dog"
+  - "lazy dog a"
+  - "dog a quick"
+  - "a quick brown"
+  - "quick brown fox"
+  - "brown fox jumps"
+  - "fox jumps over"
+  - "jumps over the"
+  - "over the lazy"
+  - "the lazy dog"
+  - "lazy dog a"
+  - "dog a quick"
+  - "a quick brown"
+  - "quick brown fox"
+  - "brown fox jumps"
+  - "fox jumps over"
+  - "jumps over the"
+  - "over the lazy"
+  - "the lazy dog"
+  - "lazy dog a"
+  - "dog a quick"
+  - "a quick brown"
+  - "quick brown fox"
+  - "brown fox jumps"
+  - "fox jumps over"
+  - "jumps over the"
+  - "over the lazy"
+  - "the lazy dog"
+  - "lazy dog a"
+  - "dog a quick"
+  - "a quick brown"
+  - "quick brown fox"
+  - "brown fox jumps"
+  - "fox jumps over"
+  - "jumps over the"
+  - "over the lazy"
+  - "the lazy dog"
+  - "lazy dog a"
+  - "dog a quick"
+  - "a quick brown"
+  - "quick brown fox"
+  - "brown fox jumps"
+  - "fox jumps over"
+  - "jumps over the"
+  - "over the lazy"
+  - "the lazy dog"
+
+Similarity Score: 97.00%
+========================================
+
+========================================
+   PLAGIARISM DETECTION REPORT
+   Text File Analysis
+========================================
+
+Comparing: tech.pdf vs test.docx
+Matched 3-word phrases:
+
+Similarity Score: 0.00%
+========================================
+
+========================================
+   PLAGIARISM DETECTION REPORT
+   Text File Analysis
+========================================
+
+========================================
+   PLAGIARISM DETECTION REPORT
+   Text File Analysis
+========================================
+
+Comparing: file1.txt vs file2.txt
+Matched 3-word phrases:
+  - "a quick brown"
+  - "quick brown fox"
+  - "brown fox jumps"
+  - "fox jumps over"
+  - "jumps over the"
+  - "over the lazy"
+  - "the lazy dog"
+  - "lazy dog a"
+  - "dog a quick"
+  - "a quick brown"
+  - "quick brown fox"
+  - "brown fox jumps"
+  - "fox jumps over"
+  - "jumps over the"
+  - "over the lazy"
+  - "the lazy dog"
+  - "lazy dog a"
+  - "dog a quick"
+  - "a quick brown"
+  - "quick brown fox"
+  - "brown fox jumps"
+  - "fox jumps over"
+  - "jumps over the"
+  - "over the lazy"
+  - "the lazy dog"
+  - "lazy dog a"
+  - "dog a quick"
+  - "a quick brown"
+  - "quick brown fox"
+  - "brown fox jumps"
+  - "fox jumps over"
+  - "jumps over the"
+  - "over the lazy"
+  - "the lazy dog"
+  - "lazy dog a"
+  - "dog a quick"
+  - "a quick brown"
+  - "quick brown fox"
+  - "brown fox jumps"
+  - "fox jumps over"
+  - "jumps over the"
+  - "over the lazy"
+  - "the lazy dog"
+  - "lazy dog a"
+  - "dog a quick"
+  - "a quick brown"
+  - "quick brown fox"
+  - "brown fox jumps"
+  - "fox jumps over"
+  - "jumps over the"
+  - "over the lazy"
+  - "the lazy dog"
+
+Similarity Score: 69.80%
+========================================
+
