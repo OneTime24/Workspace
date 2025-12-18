@@ -5,15 +5,18 @@ FILE *fp_rep = NULL;                    //Global Pointer to a file
 int main() {
 
     while (1) {                                             // Starting Menu
-        printf("\n--- PLAGIARISM CHECKER ---\n");
-        printf("--- FAST NUCES Peshawar ---\n\n");
+         printf("\n==============================================\n");
+        printf("        PLAGIARISM CHECKER SYSTEM              \n");
+        printf("          FAST NUCES PESHAWAR                  \n");
+        printf("==============================================\n\n");
         printf("1. Check Text Files\n");
         printf("2. Check Code Files\n");
         printf("3. Exit\n");
+        printf("----------------------------------------------\n");
         printf("Choice: ");
         int opt;
 
-        scanf("%d", &opt);      // option selection
+        scanf(" %d", &opt);      // option selection
 
         // FOR TEXT/DOCX/PDF
         if(opt == 1) {         
@@ -32,6 +35,7 @@ int main() {
             
             char fnames[20][200];           // an array to store file names upto 20
             for (int i=0;i<n;i++) {
+                printf("\n==============================================\n");
                 printf("File %d name: ",i + 1);            
                 scanf("%s", fnames[i]);            // file name input with its extension
             }

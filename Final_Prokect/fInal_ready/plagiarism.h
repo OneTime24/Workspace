@@ -2,7 +2,7 @@
 #define PLAGIARISM_H
 
 #include <stdio.h>          // printf() scanf()                                
-#include <ctype.h>           //tolower() | atof() | atoi()            
+#include <ctype.h>           //tolower() | atof() | atoi()  |   alpha()        
 #include <string.h>          // strcmp()  strtok()  
 #include <stdlib.h>           // malloc calloc  realloc()      system()
      

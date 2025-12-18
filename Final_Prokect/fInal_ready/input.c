@@ -1,100 +1,98 @@
 #include "plagiarism.h"
 
-
-int check_f(char *fn) {         // to check if file is ok
-    FILE *f = fopen(fn, "r");       // open the fn that points to d which points to converted text in r mode
-    if (!f){        // if failed to open file? return 0 which means false
+// check if file is ok
+int check_f(char *fn) {
+    FILE *f = fopen(fn, "r");           //open the passedfile
+    if (!f){        //if failed to open the file
     return 0;
     }
-    fseek(f, 0, SEEK_END);          // if file opened, then move the cursor to the end of the converted file!
-    long sz = ftell(f);                 //ftell() tells us the position or location of the cursor in a file, since it is char type and 1 char = 1 byte, so a way to find text size
-    fclose(f);          // close the file
-    if (sz>0){              // basically we did that to check if conversion is properly done or not!
-    return 1;   // return 1 if successful
-    }
-    return 0;       //return 0 otherwise
+    fseek(f, 0, SEEK_END);              // move the cursor to the end of file or string
+    long sz = ftell(f);         //tells us the location of the cursor or inshort size of the string or file
+    fclose(f);
+    if (sz>0){
+    return 1;           //return 1 if succesfull read
+    }       
+    return 0;
 }
 
+// convert pdf or docx
+void to_txt(char *s,char *d) {
+    //xpdf || docxtxt
+    char cmd[512];
+    int ret = -1;       
 
-void to_txt(char *s,char *d) {     // convert pdf or docx,
-    // using xpdf for windpws || docxtxt for linux && pdftotxt for linux and windows
-    
-    char cmd[512];              // a char array to store the command that we will be passing to the console using system     
-
-    int ret = -1;    //flag   
-
-    if (strstr(s, ".pdf")) {        // checking if passed file name contains .pdf
+    // simple check for extension
+    if (strstr(s, ".pdf")) {
         // command to run pdftotext
-        #ifdef _WIN32               // If Operating System is Windows
-            sprintf(cmd, "pdftotext \"%s\" \"%s\" > NUL 2>&1", s, d);          // write this formatted text/values/string in cmd array
+        #ifdef _WIN32           //If OS is windows
+            sprintf(cmd, "pdftotext \"%s\" \"%s\" > NUL 2>&1", s, d);           //write this into cmd
         #else
-                                    //If Operating System is Linux
-            sprintf(cmd, "pdftotext \"%s\" \"%s\" > /dev/null 2>&1", s, d);         // write this formatted text/values/string in cmd array
-        #endif
+                                        //for OS is linux
+            sprintf(cmd, "pdftotext \"%s\" \"%s\" > /dev/null 2>&1", s, d);         //write this into cmd
+        #endif      
+
+        ret = system(cmd);          //run the cmd command into system, it will return 0 if succesfull operation
         
-        
-        ret = system(cmd);      // pasing cmd value to system or console, it will return 0 if successful conversion!
-        // after conversion, the converted text is being pointed by char *d pointer, d here is used for destination, and s for source
-        if (ret != 0 || !check_f(d)) {              //Checking if conversion is successfull or not
-            printf("Error: PDF convert fail for %s\n", s); 
+        if (ret != 0 || !check_f(d)) {
+            printf("Error: PDF convert fail for %s\n", s);
         }
     }
-    else if (strstr(s, ".docx")) {      // checking if passed file name contains .docx
-        #ifdef _WIN32        // If Operating System is Windows
-            sprintf(cmd, "docx2txt \"%s\" \"%s\" > NUL 2>&1", s, d);            // write this formatted text/values/string in cmd array
-        #else                           //If Operating System is Windows
-            sprintf(cmd, "docx2txt < \"%s\" > \"%s\" 2> /dev/null", s, d);          // write this formatted text/values/string in cmd array
+    else if (strstr(s, ".docx")) {      // similarly if file type is docx
+        #ifdef _WIN32               // if windows
+            sprintf(cmd, "docx2txt \"%s\" \"%s\" > NUL 2>&1", s, d);            //write this in cmd 
+        #else
+            sprintf(cmd, "docx2txt < \"%s\" > \"%s\" 2> /dev/null", s, d);          //if linux write this
         #endif
 
-        ret = system(cmd);              // pasing cmd value to system or console, it will return 0 if successful conversion!
-        // after conversion, the converted text is being pointed by char *d pointer, d here is used for destination, and s for source
-
-        if (ret != 0 || !check_f(d)) {      //Checking if conversion is successfull or not
+        ret = system(cmd);      //pass the cmd string to cmd    
+        
+        if (ret != 0 || !check_f(d)) {              //checking if conversion was succesfull or not
              printf("Error: DOCX convert fail for %s\n", s);
         }
     }
 }
 
-// main read function
-char* read_f(char *fname) {
-    char tmp[] = "temp_conv.txt";
-    char *target = fname;           // a pointer that points to fname pointer
-    int conv = 0;          // flag
 
-    if (strstr(fname, ".pdf") || strstr(fname, ".docx")) {          // check if we need conversion    
+char* read_f(char *fname) {         // main read function
+    char tmp[] = "temp_conv.txt";           // a temp variable to store the converted txt
+    char *target = fname;
+    int conv = 0;       
+    
+  
+    if (strstr(fname, ".pdf") || strstr(fname, ".docx")) {                // check if we need conversion
         remove(tmp);                        // delete old temp
-        to_txt(fname, tmp);         // passing fname, and tmp to to_txt for conversion if file type is docx or pdf
+        to_txt(fname, tmp);         //passing the fname and tmp to convert to txt
         
-        if (check_f(tmp)) {             // checking again if conversion and passed by reference got the correct address of the file
-            target = tmp;   //target will now point to that converted file if the file was pdf or docx, as well as txt
-            conv = 1;           // a flag to show succeesful operation
+        if (check_f(tmp)) {         //checking if the conversion was successful or not
+            target = tmp;               //now target points to converted text
+            conv = 1;       //a flag
         } else {
             return NULL; 
         }
     }
 
+    
+    FILE *fp = fopen(target, "r");          //a pointer that points to target which points to converted tezt
 
-    FILE *fp = fopen(target, "r");          // fp pointer which points to target which points to the converted file which is being opened in read mode
-
-    if (!fp) {      // If failed to open the file
-        printf("Cannot open %s\n", target);
+    if (!fp) {
+        printf("Cannot open %s\n", target);         //to check if file opened or not
         return NULL;
     }
-
-    fseek(fp, 0, SEEK_END);     // otherwise move the cursor to the end
-    long l = ftell(fp);         // read the file size
-    rewind(fp);                     // rewind moves back the cursor to the start of the file
+      
+    fseek(fp, 0, SEEK_END);         //move the cursor to the end of file
+    long l = ftell(fp);                     //ftell tells the locaiton of the cursor, since char so acutally size
+    rewind(fp);             //move back cursor to the start
     
 
-    char *buf = (char*)malloc(l + 10);          //Using simple malloc to stay safe and increase the size of buf pointer dynamically by +10
-    fread(buf, 1, l, fp);   // fread reads the whole program at once, it will read till NULL
-    buf[l] = '\0';      // adding \0 in the end to termnate the file
+    char *buf = (char*)malloc(l + 10);          // Simple malloc function just to be safe for memory lackage
+    fread(buf, 1, l, fp);
+    buf[l] = '\0';
     
-    fclose(fp);     // close the file
+    fclose(fp);
     
-    if (conv) {                 // that flag is being used here, after each successfull conversion
-        remove(tmp);                //remove the tmp file
+    if (conv) {
+        remove(tmp);            //remove the tmp file
     }
     
-    return buf;    //the read_f function will return the buf, which returns the address to the converted file(txt,pdf or docx).
+    return buf;         // return the converted file
 }
