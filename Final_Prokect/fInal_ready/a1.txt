@@ -1,0 +1,18 @@
+Assignment 1
+Topic: Introduction to Programming
+
+Question 1:
+Explain the concept of introduction to programming with examples.
+
+Question 2:
+Write a short note on practical applications of introduction to programming.
+
+Question 3:
+Provide a simple code or algorithm related to introduction to programming.
+
+Student Instructions:
+- Write answers in your own words.
+- Avoid plagiarism.
+- Use proper formatting.
+
+End of Assignment

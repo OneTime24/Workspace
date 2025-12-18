@@ -1,0 +1,18 @@
+Assignment 3
+Topic: Recursion and Stack
+
+Question 1:
+Explain the concept of recursion and stack with examples.
+
+Question 2:
+Write a short note on practical applications of recursion and stack.
+
+Question 3:
+Provide a simple code or algorithm related to recursion and stack.
+
+Student Instructions:
+- Write answers in your own words.
+- Avoid plagiarism.
+- Use proper formatting.
+
+End of Assignment

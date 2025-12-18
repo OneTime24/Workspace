@@ -1,0 +1,18 @@
+Assignment 7
+Topic: Dynamic Memory Allocation
+
+Question 1:
+Explain the concept of dynamic memory allocation with examples.
+
+Question 2:
+Write a short note on practical applications of dynamic memory allocation.
+
+Question 3:
+Provide a simple code or algorithm related to dynamic memory allocation.
+
+Student Instructions:
+- Write answers in your own words.
+- Avoid plagiarism.
+- Use proper formatting.
+
+End of Assignment

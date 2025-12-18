@@ -1,0 +1,18 @@
+Assignment 9
+Topic: Basic Data Structures
+
+Question 1:
+Explain the concept of basic data structures with examples.
+
+Question 2:
+Write a short note on practical applications of basic data structures.
+
+Question 3:
+Provide a simple code or algorithm related to basic data structures.
+
+Student Instructions:
+- Write answers in your own words.
+- Avoid plagiarism.
+- Use proper formatting.
+
+End of Assignment

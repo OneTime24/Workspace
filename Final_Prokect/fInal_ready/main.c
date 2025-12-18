@@ -101,7 +101,7 @@ int main() {
             
             char fnames[20][200];           //20 files
             for (int i=0; i<n; i++) {
-                printf("Code file %d (.c): ", i+1);
+                printf("Code file %d (.c / cpp): ", i+1);
                 scanf("%s", fnames[i]);
             }
             

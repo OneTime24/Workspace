@@ -1,0 +1,18 @@
+Assignment 5
+Topic: Searching Techniques
+
+Question 1:
+Explain the concept of searching techniques with examples.
+
+Question 2:
+Write a short note on practical applications of searching techniques.
+
+Question 3:
+Provide a simple code or algorithm related to searching techniques.
+
+Student Instructions:
+- Write answers in your own words.
+- Avoid plagiarism.
+- Use proper formatting.
+
+End of Assignment

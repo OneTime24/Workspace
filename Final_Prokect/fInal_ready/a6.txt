@@ -1,0 +1,18 @@
+Assignment 6
+Topic: File Handling in C
+
+Question 1:
+Explain the concept of file handling in c with examples.
+
+Question 2:
+Write a short note on practical applications of file handling in c.
+
+Question 3:
+Provide a simple code or algorithm related to file handling in c.
+
+Student Instructions:
+- Write answers in your own words.
+- Avoid plagiarism.
+- Use proper formatting.
+
+End of Assignment
