@@ -34,7 +34,7 @@ void to_txt(char *s,char *d) {
         ret = system(cmd);          //run the cmd command into system, it will return 0 if succesfull operation
         
         if (ret != 0 || !check_f(d)) {
-            printf("Error: PDF convert fail for %s\n", s);
+            printf("Error: PDF convert fail for %s\nPlease Install pdf2txt tool manually and add it to system environmental path\n", s);
         }
     }
     else if (strstr(s, ".docx")) {      // similarly if file type is docx
@@ -47,7 +47,7 @@ void to_txt(char *s,char *d) {
         ret = system(cmd);      //pass the cmd string to cmd    
         
         if (ret != 0 || !check_f(d)) {              //checking if conversion was succesfull or not
-             printf("Error: DOCX convert fail for %s\n", s);
+             printf("Error: DOCX convert fail for %s\nPlease Install docx2txt tool manually and add it to system environmental path", s);
         }
     }
 }
